@@ -10,7 +10,7 @@ void print(char *str)
 {
 	int i = 0;
 
-	while (*str++)
+	while (str[i])
 		i++;
 
 	write(1, str, i);

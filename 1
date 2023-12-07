@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "shell.c"
 
 /**
  * input - recieve input from stdin
@@ -8,9 +8,10 @@
 
 ssize_t input(char *str)
 {
+	char *ptr;
 	size_t size;
 	ssize_t ret;
 
-	ret = getline(&str, &size, stdin);
+	ret = getline(&ptr, &size, stdin);
 	return (ret);
 }

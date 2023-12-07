@@ -2,10 +2,15 @@
 #define SHELL_H
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 void print(char *str);
-void pr_promt(void);
+void prompt(void);
 ssize_t input(char *str);
-int execcute(char *str);
+int execute(char *str);
 
 #endif
